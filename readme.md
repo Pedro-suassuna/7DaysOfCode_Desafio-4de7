@@ -12,47 +12,22 @@ No fim, caso você não acerte nenhuma vez, ele vai imprimir qual era o número 
 
 Depois que o programinha estiver funcionando, tente usar um número randômico em vez de um número pré-definido.
 
-
 </p></br>
 
-<h2 align="left"> EXPLICAÇÃO EXTRA:</h2>
+<h2 align="left"> DESAFIO - PARTE EXTRA:</h2>
 <p align="justify">
 
-Você já viu estruturas condicionais em Javascript anteriormente, mas vou recapitular. O if é usado para verificar se uma determinada condição é verdadeira.
+Para fazer a própria máquina escolher sozinha o número a ser adivinhado, você pode utilizar algo chamado Math.random().
 
-Exemplo:
+Para isso, utilize o código:
 
-        if (cidade === "Roma"){
-            // mostre a foto do "Coliseu"
-        }
+    Math.floor(Math.random() * (máximo - mínimo + 1) + mínimo)
 
-Além disso, ele também pode ser usado com um ou vários else if, que irá saber que a condição anterior era falsa e vai verificar se a atual é verdadeira.
-
-Por fim, existe o else sozinho, sem nenhuma condição, e o código dentro dele será executado sempre que todas as condições encadeadas anteriormente forem falsas.
-
-        if (cidade === "Roma"){
-            // mostre a foto do "Coliseu"
-        }
-        else if (cidade === "Paris"){
-            // mostre a foto do "Torre Eiffel"
-        }
-        else {
-            // dê a resposta "Você não digitou nenhuma cidade válida"
-        }
-
-Além disso, para a parte 4, você precisará de uma estrutura de repetição (loop) como o while. Para usá-lo, é bem fácil:
-
-        let idade = 0;
-
-        while (idade < 8) {
-            // algum comando para imprimir a idade
-            idade = idade + 1;
-        }
-
-Esse código começará com a idade em zero e, ao entrar no while, esse valor será impresso e, logo depois, incrementado em 1.
-
-Ou seja, depois da primeira vez que ele passar, o valor da idade será igual a 1, que é menor que 8, e por isso, a condição do while terá um resultado verdadeiro e ele continuará a ser executado.
-
-Ele só vai parar quando o valor da variável idade chegar a 8, que não é menor que 8, e por isso a condição do while terá um resultado falso.
+Onde, claro, você terá que alterar os valores de mínimo e máximo pelos limites inferior e superior, respectivamente.
 
 </p></br>
+
+<h2>MATERIAIS COMPLEMENTARES:</h2>
+<a href="https://caelum57945.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZkZXZlbG9wZXIubW96aWxsYS5vcmclMkZwdC1CUiUyRmRvY3MlMkZXZWIlMkZKYXZhU2NyaXB0JTJGR3VpZGUlMkZMb29wc19hbmRfaXRlcmF0aW9uJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0QlMjUyMzdEYXlzT2ZDb2RlJTJCLSUyQkwlMjVDMyUyNUIzZ2ljYSUyQkpTJTJCNCUyNTJGNyUyNTNBJTJCJTI1RjAlMjU5RiUyNTkxJTI1QTklMjVGMCUyNTlGJTI1OEYlMjVCRCUyNUUyJTI1ODAlMjU4RCUyNUYwJTI1OUYlMjU5MiUyNUJCJTJCTWFpcyUyQmxvb3BzJTJCZSUyQnJhbmRvbWl6YSUyNUMzJTI1QTclMjVDMyUyNUEzbyUyNnV0bV9jYW1wYWlnbiUzRCUyNTVCQUxVUkElMkIlMjUyMzdkYXlzJTJCT2YlMkJDb2RlJTI1NUQlMkIlMjUyOEwlMjVDMyUyNUIzZ2ljYSUyQmRlJTJCUHJvZ3JhbWElMjVDMyUyNUE3JTI1QzMlMjVBM28lMkItJTJCSmF2YVNjcmlwdCUyNTI5JTJCRGlhJTJCNCUyNTNBJTJCTWFpcyUyQmxvb3BzJTJCZSUyQnJhbmRvbWl6YSUyNUMzJTI1QTclMjVDMyUyNUEzbw==&sig=Bw2xXGfWXtWy3AVDnvL2Mc2Eciof9RKsUyvg1yS2YWhZ&iat=1674644592&a=%7C%7C476258007%7C%7C&account=caelum57945%2Eactivehosted%2Ecom&email=vX9IUN6aWT4akmpPLF7TdHQUJJSi4P3dB7BE1Xn5C7M%3D&s=94ae6e9aa6e64516a7462059f33fe23e&i=1266A7839A266A8688">Laços e iterações - MDN web docs</a>
+</br>
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random?utm_source=ActiveCampaign&utm_medium=email&utm_content=%237DaysOfCode+-+Lógica+JS+4%2F7%3A+👩🏽%E2%80%8D💻+Mais+loops+e+randomização&utm_campaign=%5BALURA+%237days+Of+Code%5D+%28Lógica+de+Programação+-+JavaScript%29+Dia+4%3A+Mais+loops+e+randomização">Math.random() - MDN web docs</a>
